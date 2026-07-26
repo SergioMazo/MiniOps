@@ -1,0 +1,5 @@
+# Fictitious inventory for operator reference.
+# role          hostname       address
+protected       miniops-node   192.168.x.x
+repository      backup-node    100.x.x.x
+
