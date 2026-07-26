@@ -1,0 +1,37 @@
+[Unit]
+Description=MiniOps encrypted Restic backup
+Documentation=https://github.com/YOUR_ACCOUNT/MiniOps
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=/etc/miniops/backup.env
+OnFailure=miniops-failure@%n.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/miniops-backup
+User=root
+Group=root
+UMask=0077
+Nice=15
+IOSchedulingClass=idle
+TimeoutStartSec=12h
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=read-only
+ProtectControlGroups=true
+ProtectKernelLogs=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+RestrictNamespaces=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
+SystemCallArchitectures=native
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=CAP_CHOWN CAP_DAC_OVERRIDE CAP_DAC_READ_SEARCH CAP_FOWNER
+ReadOnlyPaths=/etc/miniops
+ReadWritePaths=/var/lib/miniops /var/cache/miniops /run/lock
+

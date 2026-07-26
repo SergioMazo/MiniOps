@@ -1,0 +1,13 @@
+[Unit]
+Description=Weekly MiniOps repository integrity schedule
+
+[Timer]
+OnCalendar=Sun *-*-* 04:00:00 UTC
+RandomizedDelaySec=20m
+Persistent=true
+AccuracySec=1m
+Unit=miniops-backup-check.service
+
+[Install]
+WantedBy=timers.target
+

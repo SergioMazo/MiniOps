@@ -1,0 +1,13 @@
+[Unit]
+Description=Record MiniOps workflow failure for %I
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/logger -p daemon.err -t miniops Workflow failure: %I
+User=root
+Group=root
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+RestrictAddressFamilies=AF_UNIX

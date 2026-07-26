@@ -1,0 +1,13 @@
+[Unit]
+Description=Monthly MiniOps isolated restore-test schedule
+
+[Timer]
+OnCalendar=*-*-01 06:30:00 UTC
+RandomizedDelaySec=30m
+Persistent=true
+AccuracySec=1m
+Unit=miniops-restore-test.service
+
+[Install]
+WantedBy=timers.target
+

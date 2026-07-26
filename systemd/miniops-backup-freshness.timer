@@ -1,0 +1,13 @@
+[Unit]
+Description=Daily MiniOps backup freshness schedule
+
+[Timer]
+OnCalendar=*-*-* 03:00:00 UTC
+RandomizedDelaySec=10m
+Persistent=true
+AccuracySec=1m
+Unit=miniops-backup-freshness.service
+
+[Install]
+WantedBy=timers.target
+

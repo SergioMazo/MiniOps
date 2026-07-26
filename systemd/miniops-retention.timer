@@ -1,0 +1,13 @@
+[Unit]
+Description=Weekly MiniOps retention schedule
+
+[Timer]
+OnCalendar=Sun *-*-* 05:30:00 UTC
+RandomizedDelaySec=20m
+Persistent=true
+AccuracySec=1m
+Unit=miniops-retention.service
+
+[Install]
+WantedBy=timers.target
+
