@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a reusable, security-conscious improvement
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the operational problem without private infrastructure details.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Security and rollback considerations
+    validations:
+      required: true
+

@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible MiniOps defect
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Do not include credentials, private infrastructure data, or unredacted logs.
+  - type: input
+    id: version
+    attributes:
+      label: MiniOps version
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Distribution and version
+      placeholder: Ubuntu LTS
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Sanitized reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation commands already run
+
