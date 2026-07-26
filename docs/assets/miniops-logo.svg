@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+  <title id="title">MiniOps</title>
+  <desc id="desc">A geometric server node and the MiniOps wordmark</desc>
+  <rect width="720" height="180" rx="28" fill="#101820"/>
+  <g transform="translate(36 36)">
+    <rect width="108" height="108" rx="18" fill="#16c79a"/>
+    <rect x="18" y="20" width="72" height="28" rx="6" fill="#101820"/>
+    <rect x="18" y="60" width="72" height="28" rx="6" fill="#101820"/>
+    <circle cx="76" cy="34" r="4" fill="#f2f5f7"/>
+    <circle cx="76" cy="74" r="4" fill="#f2f5f7"/>
+    <path d="M94 94 L108 108" stroke="#f2f5f7" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="174" y="111" fill="#f2f5f7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="72" font-weight="700">MiniOps</text>
+  <text x="178" y="142" fill="#99aab5" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">SMALL NODES · SERIOUS OPERATIONS</text>
+</svg>
