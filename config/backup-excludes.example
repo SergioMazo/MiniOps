@@ -1,0 +1,11 @@
+**/.cache
+**/node_modules
+**/.git/objects
+/var/cache
+/var/tmp
+/tmp
+/proc
+/sys
+/dev
+/run
+
