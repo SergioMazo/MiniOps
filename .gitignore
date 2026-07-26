@@ -1,0 +1,39 @@
+# Secrets and live configuration
+*.env
+!.env.example
+config/local/
+secrets/
+*.age
+*.gpg
+
+# SSH and TLS material
+id_*
+*.key
+*.pem
+*.p12
+*.pfx
+known_hosts
+authorized_keys
+
+# Runtime output
+*.log
+*.lock
+*.pid
+state/
+cache/
+tmp/
+restore-test/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Test and tool output
+.shellcheck-cache/
+.markdownlint-cache/
+coverage/
+dist/
+
